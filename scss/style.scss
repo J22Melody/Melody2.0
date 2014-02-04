@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@import "../bower_components/bootstrap-sass/lib/bootstrap";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix"; 
+
+html,body{
+  height: 100%;
+}
+
+#sidebar{
+  background-image: url('images/sidebar.jpg');
+  width: 40%; 
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+}
+
+#main{
+  float: right;
+  width: 60%; 
+  padding: 120px 120px 70px 70px; 
+}
+
+#title{
+    margin-bottom: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+
+    h1{
+        font-size: 42px; 
+        // font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
+        display: inline;
+        margin-right: 26px; 
+ 
+        a{
+            color: #555;
+            text-decoration: none;
+        }
+
+    }
+
+    nav{
+        display: inline;
+
+        a{
+            margin-right: 4px;
+            font-size: 13px;
+        }
+    }
+
+    .create-time{
+        margin-top: 24px;
+        float: right;
+    }
+}
+
+#latest-wrapper{
+    margin-top: 52px;
+
+    h3{
+        font-weight: bold;
+    }
+
+
+    #latest{
+        margin-top: 20px;
+
+        li{
+            line-height: 22px; 
+            font-family: "Microsoft Yahei";
+
+            h6{
+                display: inline;
+                font-size: 13px; 
+            }
+        }
+    }
+}
+
+.post-content{
+    line-height: 1.67;
+} 
+
+.post-navigation{
+    @include clearfix;
+    margin-top: 24px;
+    margin-bottom: 60px;
+    font-size: 13px;
+} 
