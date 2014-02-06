@@ -1,3 +1,12 @@
+/*
+Theme Name: Melody
+Author: ZifanJiang
+Author URI: http://jiangzifan.com
+Description: My first theme ;p
+License: Do whatever the fucked you wanna do
+
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 /* line 22, bower_components/bootstrap-sass/lib/_normalize.scss */
 article,
@@ -7628,12 +7637,12 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 7, scss/style.scss */
+/* line 17, scss/style.scss */
 html, body {
   height: 100%;
 }
 
-/* line 11, scss/style.scss */
+/* line 21, scss/style.scss */
 #sidebar {
   background-image: url("images/sidebar.jpg");
   width: 40%;
@@ -7643,74 +7652,85 @@ html, body {
   position: fixed;
 }
 
-/* line 20, scss/style.scss */
+/* line 30, scss/style.scss */
 #main {
+  position: relative;
   float: right;
   width: 60%;
   padding: 120px 120px 70px 70px;
+  min-height: 621px;
+}
+/* line 37, scss/style.scss */
+#main footer {
+  text-align: center;
+  color: grey;
+  font-size: 12px;
+  position: absolute;
+  bottom: 40px;
 }
 
-/* line 26, scss/style.scss */
+/* line 46, scss/style.scss */
 #title {
   margin-bottom: 26px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
-/* line 31, scss/style.scss */
+/* line 51, scss/style.scss */
 #title h1 {
   font-size: 42px;
   display: inline;
   margin-right: 26px;
 }
-/* line 37, scss/style.scss */
+/* line 57, scss/style.scss */
 #title h1 a {
   color: #555;
   text-decoration: none;
 }
-/* line 44, scss/style.scss */
+/* line 64, scss/style.scss */
 #title nav {
   display: inline;
 }
-/* line 47, scss/style.scss */
+/* line 67, scss/style.scss */
 #title nav a {
   margin-right: 4px;
   font-size: 13px;
 }
-/* line 53, scss/style.scss */
+/* line 73, scss/style.scss */
 #title .create-time {
   margin-top: 24px;
   float: right;
 }
 
-/* line 59, scss/style.scss */
+/* line 79, scss/style.scss */
 #latest-wrapper {
   margin-top: 52px;
 }
-/* line 62, scss/style.scss */
+/* line 82, scss/style.scss */
 #latest-wrapper h3 {
   font-weight: bold;
 }
-/* line 67, scss/style.scss */
-#latest-wrapper #latest {
+
+/* line 87, scss/style.scss */
+#latest {
   margin-top: 20px;
 }
-/* line 70, scss/style.scss */
-#latest-wrapper #latest li {
+/* line 90, scss/style.scss */
+#latest li {
   line-height: 22px;
   font-family: "Microsoft Yahei";
 }
-/* line 74, scss/style.scss */
-#latest-wrapper #latest li h6 {
+/* line 94, scss/style.scss */
+#latest li h6 {
   display: inline;
   font-size: 13px;
 }
 
-/* line 82, scss/style.scss */
+/* line 101, scss/style.scss */
 .post-content {
   line-height: 1.67;
 }
 
-/* line 86, scss/style.scss */
+/* line 105, scss/style.scss */
 .post-navigation {
   overflow: hidden;
   *zoom: 1;
