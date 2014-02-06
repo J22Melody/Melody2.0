@@ -11,7 +11,7 @@
     </nav>
 </div>
 
-<div>
+<div style="line-height:2.0;">
     <?php the_content(); ?>
 </div>
 
