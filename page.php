@@ -6,8 +6,8 @@
     <h1><?php the_title(); ?></h1>
     <nav>
         <a href="<?php bloginfo('url'); ?>">首页</a>
-        <a href="<?php bloginfo('url'); ?>/?page_id=2">关于我</a>
-        <a href="<?php bloginfo('url'); ?>/?page_id=20">所有文章</a>
+        <a href="<?php bloginfo('url'); ?>/?page_id=225">关于我</a>
+        <a href="<?php bloginfo('url'); ?>/?page_id=372">所有文章</a>
     </nav>
 </div>
 

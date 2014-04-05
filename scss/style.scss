@@ -25,21 +25,19 @@ html,body{
   background-position: center;
   background-size: cover;
   position: fixed;
+  display: none;
 }
 
 #main{
   position: relative;
-  float: right;
-  width: 60%; 
-  padding: 120px 120px 70px 70px; 
+  width: 100%;
+  padding: 10% 10% 0 6%; 
   min-height: 621px;
 
   footer{
-    text-align: center;
+    margin-top: 80px;
     color: grey;
     font-size: 12px; 
-    position: absolute;
-    bottom: 40px;
   }
 }
 
@@ -51,8 +49,6 @@ html,body{
     h1{
         font-size: 42px; 
         // font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif;
-        display: inline;
-        margin-right: 26px; 
  
         a{
             color: #555;
@@ -63,17 +59,17 @@ html,body{
 
     nav{
         display: inline;
+        margin-left: 7px; 
 
         a{
             margin-right: 4px;
             font-size: 13px;
         }
     }
+}
 
-    .create-time{
-        margin-top: 24px;
-        float: right;
-    }
+#description{
+  margin-left: -7px;
 }
 
 #latest-wrapper{
@@ -91,7 +87,13 @@ html,body{
             line-height: 22px; 
             font-family: "Microsoft Yahei";
 
+            span.date{
+              width: 130px;
+              display: inline-block;
+            }
+
             h6{
+                margin-left: 10px;
                 display: inline;
                 font-size: 13px; 
             }
@@ -108,3 +110,42 @@ html,body{
     margin-bottom: 60px;
     font-size: 13px;
 } 
+
+
+
+/* 大屏幕 */
+@media (min-width: 1200px) { }
+ 
+/* 平板电脑和小屏电脑之间的分辨率 */
+@media (min-width: 768px) and (max-width: 979px) {  }
+ 
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+@media (max-width: 767px) {  }
+ 
+/* 横向放置的手机及分辨率更小的设备 */
+@media (max-width: 480px) { }
+
+@media (min-width: 979px){
+  h1{
+    display: inline;
+  }
+
+  nav{
+    margin-left: 26px !important;
+  }
+}
+
+@media (min-width: 768px){
+
+  #sidebar{
+    display: block;
+  }
+
+  #main{
+    float: right;
+    width: 60%;  
+    padding-top: 120px;
+  }
+}
+
+

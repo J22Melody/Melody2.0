@@ -1,6 +1,4 @@
-        <footer>
-            © Powered by Wordpress and Melody, ZifanJiang 2014 with help from <a href="http://www.bootcss.com/">Twitter Bootstrap</a>
-        </footer>
+        
 
     </div>
 
