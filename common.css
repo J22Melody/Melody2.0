@@ -1,0 +1,20 @@
+/* line 1, scss/common.scss */
+body {
+  color: #6d6d6d;
+  font-size: 14px;
+  line-height: 2.1;
+  font-family: "Hiragino Sans GB", sans-serif;
+  padding: 0 20px;
+}
+
+/* line 9, scss/common.scss */
+a {
+  color: #6d6d6d;
+}
+
+/* line 13, scss/common.scss */
+blockquote {
+  padding-left: 2em;
+  background: url(images/quote.png) no-repeat 0 0;
+  margin: 15px;
+}
