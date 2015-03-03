@@ -1,8 +1,3 @@
-
-
-    </div>
-
-    <footer class="footer">powered by WordPress and <a href="http://duoshuo.com/" target="_blank">多说</a></footer>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

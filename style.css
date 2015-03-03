@@ -7,70 +7,192 @@ License: Do whatever the fucked you wanna do
 
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* line 1, scss/common.scss */
-body {
+/* line 1, scss/_common.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   color: #6d6d6d;
   font-size: 14px;
   line-height: 2.1;
   font-family: "Hiragino Sans GB", sans-serif;
-  padding: 0 20px;
 }
 
-/* line 9, scss/common.scss */
+/* line 11, scss/_common.scss */
 a {
   color: #6d6d6d;
 }
 
-/* line 13, scss/common.scss */
-blockquote {
-  padding-left: 2em;
-  background: url(images/quote.png) no-repeat 0 0;
-  margin: 15px;
+/* line 15, scss/_common.scss */
+ul.reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* line 18, scss/style.scss */
+/* line 21, scss/_common.scss */
+blockquote {
+  margin: 15px;
+  padding-left: 2em;
+  background: url(images/quote.png) no-repeat 0 0;
+}
+
+/* line 1, scss/_layout.scss */
 .container {
+  position: relative;
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
+  min-height: 100%;
 }
 
-/* line 24, scss/style.scss */
+/* line 9, scss/_layout.scss */
 .footer {
   margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
 }
-/* line 29, scss/style.scss */
+/* line 15, scss/_layout.scss */
 .footer a {
-  color: #6d6d6d;
   text-decoration: none;
 }
 
-/* line 35, scss/style.scss */
+/* line 1, scss/_index.scss */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(images/mugecuo.jpg) bottom no-repeat;
+  -webkit-background-size: 100% 800px;
+  -moz-background-size: 100% 800px;
+  -o-background-size: 100% 800px;
+  background-size: 100% 800px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+/* line 10, scss/_index.scss */
+.wrapper a {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 15, scss/_index.scss */
+.wrapper .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 23, scss/_index.scss */
+.header {
+  float: right;
+  margin-top: 5px;
+  margin-right: 150px;
+}
+/* line 28, scss/_index.scss */
+.header h1 {
+  position: relative;
+  margin: 0 10px 0 0;
+  display: inline;
+  font-size: 18px;
+  font-weight: normal;
+}
+/* line 35, scss/_index.scss */
+.header h1 span {
+  position: relative;
+  top: -6px;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+/* line 44, scss/_index.scss */
+.header a {
+  display: inline-block;
+  width: 66px;
+  height: 28px;
+  line-height: 28px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 54, scss/_index.scss */
+.header a:hover {
+  opacity: .9;
+}
+
+/* line 58, scss/_index.scss */
+.index-main {
+  position: absolute;
+  left: 200px;
+  bottom: 150px;
+}
+/* line 63, scss/_index.scss */
+.index-main .posts-link {
+  background: rgba(170, 170, 170, 0.3);
+  padding: 10px 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 30px;
+}
+/* line 71, scss/_index.scss */
+.index-main .posts {
+  margin-top: 12px;
+}
+/* line 74, scss/_index.scss */
+.index-main .posts h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 1px 1px 2px #000;
+}
+/* line 80, scss/_index.scss */
+.index-main .posts h3:before {
+  content: "-";
+  margin-right: 10px;
+}
+/* line 85, scss/_index.scss */
+.index-main .posts h3 a {
+  text-decoration: none;
+}
+/* line 88, scss/_index.scss */
+.index-main .posts h3 a:hover {
+  text-decoration: underline;
+}
+
+/* line 1, scss/_single.scss */
 .post {
   margin: 40px 0;
 }
-/* line 38, scss/style.scss */
+/* line 4, scss/_single.scss */
 .post .top {
   padding-bottom: 8px;
   margin-bottom: 30px;
   border-bottom: 1px solid #999;
 }
-/* line 43, scss/style.scss */
+/* line 9, scss/_single.scss */
 .post .top h1 {
   font-size: 16px;
   font-weight: normal;
   display: inline;
 }
-/* line 49, scss/style.scss */
+/* line 15, scss/_single.scss */
 .post .top .date {
   margin-left: 10px;
   font-size: 12px;
   color: #999;
 }
 
-/* line 61, scss/style.scss */
+/* line 25, scss/_single.scss */
 .ds-meta, .ds-rounded, .ds-powered-by, .ds-comments-info, .ds-post-likes, .ds-post-report, .ds-post-repost {
   display: none !important;
 }

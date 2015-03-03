@@ -1,0 +1,96 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background: url(images/mugecuo.jpg) bottom no-repeat;
+    @include background-size(100% 800px);
+    color: #fff;
+    color: rgba(255,255,255,.8);
+    font-size: 16px;
+
+    a {
+        color: #fff;
+        color: rgba(255,255,255,.8);
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.header {
+    float: right;
+    margin-top: 5px;
+    margin-right: 150px;
+
+    h1 {
+        position: relative;
+        margin: 0 10px 0 0;
+        display: inline;
+        font-size: 18px;
+        font-weight: normal;
+
+        span {
+            position: relative;
+            top: -6px;
+            font-size: 16px;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+    }
+
+    a {
+        display: inline-block;
+        width: 66px;
+        height: 28px;
+        line-height: 28px;
+        background: rgba(0,0,0,.2);
+        @include border-radius(4px);
+        text-decoration: none;
+        text-align: center;
+
+        &:hover { opacity: .9; }
+    }
+}
+
+.index-main {
+    position: absolute;
+    left: 200px;
+    bottom: 150px;
+
+    .posts-link {
+        background: rgba(170,170,170,.3);
+        padding: 10px 16px;
+        @include border-radius(8px);
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .posts {
+        margin-top: 12px;
+
+        h3 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: normal;
+            text-shadow: 1px 1px 2px #000;
+
+            &:before {
+                content: "-";
+                margin-right: 10px;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+}

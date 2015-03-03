@@ -1,16 +1,22 @@
 <?php get_header() ?>
 
-<?php the_post() ?>
+<div class="container">
 
-<article class="post">
-    <div class="top">
-        <h1><?php the_title(); ?></h1>
-        <span class="date"><?php the_date('F j, Y'); ?></span>
-    </div>
+    <?php the_post() ?>
 
-    <div class="content"><?php the_content(); ?></div>
-</article>
+    <article class="post">
+        <div class="top">
+            <h1><?php the_title(); ?></h1>
+            <span class="date"><?php the_date('F j, Y'); ?></span>
+        </div>
 
-<?php comments_template() ?>
+        <div class="content"><?php the_content(); ?></div>
+    </article>
+
+    <?php comments_template() ?>
+
+</div>
+
+<footer class="footer">powered by WordPress and <a href="http://duoshuo.com/" target="_blank">多说</a></footer>
 
 <?php get_footer() ?>
