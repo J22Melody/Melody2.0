@@ -70,13 +70,14 @@ blockquote {
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 }
-/* line 10, scss/_index.scss */
+/* line 11, scss/_index.scss */
 .wrapper a {
   color: #fff;
   color: rgba(255, 255, 255, 0.8);
 }
-/* line 15, scss/_index.scss */
+/* line 16, scss/_index.scss */
 .wrapper .footer {
   position: absolute;
   bottom: 0;
@@ -84,13 +85,13 @@ blockquote {
   right: 0;
 }
 
-/* line 23, scss/_index.scss */
+/* line 24, scss/_index.scss */
 .header {
   float: right;
   margin-top: 5px;
   margin-right: 150px;
 }
-/* line 28, scss/_index.scss */
+/* line 29, scss/_index.scss */
 .header h1 {
   position: relative;
   margin: 0 10px 0 0;
@@ -98,7 +99,11 @@ blockquote {
   font-size: 18px;
   font-weight: normal;
 }
-/* line 35, scss/_index.scss */
+/* line 36, scss/_index.scss */
+.header h1 a {
+  text-decoration: none;
+}
+/* line 40, scss/_index.scss */
 .header h1 span {
   position: relative;
   top: -6px;
@@ -106,8 +111,8 @@ blockquote {
   font-style: italic;
   letter-spacing: 1px;
 }
-/* line 44, scss/_index.scss */
-.header a {
+/* line 49, scss/_index.scss */
+.header .about {
   display: inline-block;
   width: 66px;
   height: 28px;
@@ -121,18 +126,18 @@ blockquote {
   text-decoration: none;
   text-align: center;
 }
-/* line 54, scss/_index.scss */
-.header a:hover {
+/* line 59, scss/_index.scss */
+.header .about:hover {
   opacity: .9;
 }
 
-/* line 58, scss/_index.scss */
+/* line 63, scss/_index.scss */
 .index-main {
   position: absolute;
   left: 200px;
-  bottom: 150px;
+  bottom: 120px;
 }
-/* line 63, scss/_index.scss */
+/* line 68, scss/_index.scss */
 .index-main .posts-link {
   background: rgba(170, 170, 170, 0.3);
   padding: 10px 16px;
@@ -143,50 +148,56 @@ blockquote {
   border-radius: 8px;
   text-decoration: none;
   font-size: 30px;
+  letter-spacing: 1px;
 }
-/* line 71, scss/_index.scss */
+/* line 77, scss/_index.scss */
 .index-main .posts {
   margin-top: 12px;
 }
-/* line 74, scss/_index.scss */
+/* line 80, scss/_index.scss */
 .index-main .posts h3 {
   margin: 0;
   font-size: 16px;
   font-weight: normal;
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 80, scss/_index.scss */
+/* line 86, scss/_index.scss */
 .index-main .posts h3:before {
   content: "-";
   margin-right: 10px;
 }
-/* line 85, scss/_index.scss */
+/* line 91, scss/_index.scss */
+.index-main .posts h3.more:before {
+  content: "+";
+  margin-right: 8px;
+}
+/* line 96, scss/_index.scss */
 .index-main .posts h3 a {
   text-decoration: none;
 }
-/* line 88, scss/_index.scss */
+/* line 99, scss/_index.scss */
 .index-main .posts h3 a:hover {
   text-decoration: underline;
 }
 
 /* line 1, scss/_single.scss */
-.post {
+.post, .archives {
   margin: 40px 0;
 }
 /* line 4, scss/_single.scss */
-.post .top {
+.post .top, .archives .top {
   padding-bottom: 8px;
   margin-bottom: 30px;
   border-bottom: 1px solid #999;
 }
 /* line 9, scss/_single.scss */
-.post .top h1 {
+.post .top h1, .archives .top h1 {
   font-size: 16px;
   font-weight: normal;
   display: inline;
 }
 /* line 15, scss/_single.scss */
-.post .top .date {
+.post .top .date, .archives .top .date {
   margin-left: 10px;
   font-size: 12px;
   color: #999;

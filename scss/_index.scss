@@ -6,6 +6,7 @@
     color: #fff;
     color: rgba(255,255,255,.8);
     font-size: 16px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
 
     a {
         color: #fff;
@@ -32,6 +33,10 @@
         font-size: 18px;
         font-weight: normal;
 
+        a {
+            text-decoration: none;
+        }
+
         span {
             position: relative;
             top: -6px;
@@ -41,7 +46,7 @@
         }
     }
 
-    a {
+    .about {
         display: inline-block;
         width: 66px;
         height: 28px;
@@ -58,7 +63,7 @@
 .index-main {
     position: absolute;
     left: 200px;
-    bottom: 150px;
+    bottom: 120px;
 
     .posts-link {
         background: rgba(170,170,170,.3);
@@ -66,6 +71,7 @@
         @include border-radius(8px);
         text-decoration: none;
         font-size: 30px;
+        letter-spacing: 1px;
     }
 
     .posts {
@@ -75,11 +81,16 @@
             margin: 0;
             font-size: 16px;
             font-weight: normal;
-            text-shadow: 1px 1px 2px #000;
+            text-shadow: 1px 1px 2px rgba(0,0,0,.3);
 
             &:before {
                 content: "-";
                 margin-right: 10px;
+            }
+
+            &.more:before {
+                content: "+";
+                margin-right: 8px;
             }
 
             a {

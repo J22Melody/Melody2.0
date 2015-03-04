@@ -3,8 +3,8 @@
 <div class="wrapper">
     <div class="container">
         <header class="header">
-            <h1>蒋子凡 <span>Blog</span></h1>
-            <a href="/about">关于</a>
+            <h1><a href="/">蒋子凡 <span>Blog</span></a></h1>
+            <a href="/about" class="about">关于</a>
         </header>
 
         <div class="index-main">
@@ -20,12 +20,15 @@
                 </li>
                 <?php endwhile; ?>
                 <?php endif; ?>
+                <li>
+                    <h3 class="more"><a href="#">More ..</a></h3>
+                </li>
             </ul>
 
         </div>
     </div>
 
-    <footer class="footer">powered by WordPress and <a href="http://duoshuo.com/" target="_blank">多说</a></footer>
+    <?php include '_footer.php' ?>
 </div>
 
 <?php get_footer() ?>
