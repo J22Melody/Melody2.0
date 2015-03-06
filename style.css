@@ -21,16 +21,21 @@ html, body {
 /* line 11, scss/_common.scss */
 a {
   color: #6d6d6d;
+  text-decoration: none;
+}
+/* line 15, scss/_common.scss */
+a:hover {
+  text-decoration: underline;
 }
 
-/* line 15, scss/_common.scss */
+/* line 18, scss/_common.scss */
 ul.reset {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 21, scss/_common.scss */
+/* line 24, scss/_common.scss */
 blockquote {
   margin: 15px;
   padding-left: 2em;
@@ -52,10 +57,6 @@ blockquote {
   margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
-}
-/* line 15, scss/_layout.scss */
-.footer a {
-  text-decoration: none;
 }
 
 /* line 1, scss/_index.scss */
@@ -181,29 +182,46 @@ blockquote {
 }
 
 /* line 1, scss/_single.scss */
-.post, .archives {
+.inner {
   margin: 40px 0;
 }
 /* line 4, scss/_single.scss */
-.post .top, .archives .top {
+.inner .top {
   padding-bottom: 8px;
   margin-bottom: 30px;
   border-bottom: 1px solid #999;
 }
 /* line 9, scss/_single.scss */
-.post .top h1, .archives .top h1 {
+.inner .top h1 {
   font-size: 16px;
   font-weight: normal;
   display: inline;
 }
-/* line 15, scss/_single.scss */
-.post .top .date, .archives .top .date {
+/* line 16, scss/_single.scss */
+.inner .meta {
   margin-left: 10px;
   font-size: 12px;
   color: #999;
 }
+/* line 22, scss/_single.scss */
+.inner ul.meta {
+  display: inline;
+  padding-left: 0;
+}
+/* line 26, scss/_single.scss */
+.inner ul.meta li {
+  display: inline;
+  margin-left: 10px;
+}
 
-/* line 25, scss/_single.scss */
+/* line 35, scss/_single.scss */
+.archives li h3 {
+  font-size: 14px;
+  font-weight: normal;
+  display: inline;
+}
+
+/* line 45, scss/_single.scss */
 .ds-meta, .ds-rounded, .ds-powered-by, .ds-comments-info, .ds-post-likes, .ds-post-report, .ds-post-repost {
   display: none !important;
 }

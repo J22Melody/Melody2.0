@@ -4,10 +4,10 @@
 
     <?php the_post() ?>
 
-    <article class="post">
+    <article class="inner">
         <div class="top">
             <h1><?php the_title(); ?></h1>
-            <span class="date"><?php the_date('F j, Y'); ?></span>
+            <span class="meta"><?php the_date('F j, Y'); ?></span>
         </div>
 
         <div class="content"><?php the_content(); ?></div>

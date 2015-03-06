@@ -1,4 +1,4 @@
-.post, .archives {
+.inner {
     margin: 40px 0;
 
     .top {
@@ -11,11 +11,31 @@
             font-weight: normal;
             display: inline;
         }
+    }
 
-        .date {
+    .meta {
+        margin-left: 10px;
+        font-size: 12px;
+        color: #999;
+    }
+
+    ul.meta {
+        display: inline;
+        padding-left: 0;
+
+        li {
+            display: inline;
             margin-left: 10px;
-            font-size: 12px;
-            color: #999;
+        }
+    }
+}
+
+.archives {
+    li {
+        h3 {
+            font-size: 14px;
+            font-weight: normal;
+            display: inline;
         }
     }
 }

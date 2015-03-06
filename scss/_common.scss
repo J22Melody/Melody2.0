@@ -10,6 +10,9 @@ html, body {
 
 a {
     color: #6d6d6d;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
 }
 
 ul.reset {
