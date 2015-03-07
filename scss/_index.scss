@@ -102,6 +102,41 @@
             }
         }
     }
+}
 
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        text-align: center;
+        @include background-size(auto 100%);
+    }
 
+    .header {
+        float: none;
+        margin: 0;
+        padding: 5px 10px;
+        @include clearfix;
+
+        h1 {
+            display: block;
+            float: left;
+        }
+
+        .about { float: right; }
+    }
+
+    .index-main {
+        position: relative;
+        margin-top: 200px;
+        bottom: 0;
+        left: 0;
+        background: rgba(222,222,222,.3);
+        padding: 10px 10px;
+        @include border-radius(8px);
+
+        .posts-link {
+            background: none;
+            padding: 0;
+            @include border-radius(none);
+        }
+    }
 }

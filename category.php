@@ -1,16 +1,19 @@
 <?php get_header() ?>
 
 <div class="container">
+
     <div class="inner">
+        <a href="<?php echo get_site_url(); ?>" class="home-link">Home</a>
+
         <div class="top">
             <h1>归档</h1>
             <ul class="meta">
-                <li><a href="<?php echo get_site_url(); ?>/archives/all">All</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/archives/life">Life</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/archives/thinking">Thinking</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/archives/tech">Tech</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/archives/travel">Travel</a></li>
-                <li><a href="<?php echo get_site_url(); ?>/archives/poetry">Poetry</a></li>
+                <li><?php category_link('all') ?></li>
+                <li><?php category_link('life') ?></li>
+                <li><?php category_link('thinking') ?></li>
+                <li><?php category_link('tech') ?></li>
+                <li><?php category_link('travel') ?></li>
+                <li><?php category_link('poetry') ?></li>
             </ul>
         </div>
 

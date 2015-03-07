@@ -1,3 +1,9 @@
+.home-link {
+    float: right;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 .inner {
     margin: 40px 0;
 
@@ -28,6 +34,11 @@
             margin-left: 10px;
         }
     }
+
+    .source {
+        margin-top: 20px;
+        font-style: italic;
+    }
 }
 
 .archives {
@@ -40,8 +51,12 @@
     }
 }
 
-// for duoshuo
-
 .ds-meta, .ds-rounded, .ds-powered-by, .ds-comments-info, .ds-post-likes, .ds-post-report, .ds-post-repost {
     display: none !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .inner {
+        padding: 0 10px;
+    }
 }
