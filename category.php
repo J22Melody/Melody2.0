@@ -5,12 +5,12 @@
         <div class="top">
             <h1>归档</h1>
             <ul class="meta">
-                <li><a href="/archives/all">All</a></li>
-                <li><a href="/archives/life">Life</a></li>
-                <li><a href="/archives/thinking">Thinking</a></li>
-                <li><a href="/archives/tech">Tech</a></li>
-                <li><a href="/archives/travel">Travel</a></li>
-                <li><a href="/archives/poetry">Poetry</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/all">All</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/life">Life</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/thinking">Thinking</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/tech">Tech</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/travel">Travel</a></li>
+                <li><a href="<?php echo get_site_url(); ?>/archives/poetry">Poetry</a></li>
             </ul>
         </div>
 

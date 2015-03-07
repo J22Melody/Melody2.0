@@ -3,12 +3,12 @@
 <div class="wrapper">
     <div class="container">
         <header class="header">
-            <h1><a href="/">蒋子凡 <span>Blog</span></a></h1>
-            <a href="/about" class="about">关于</a>
+            <h1><a href="<?php echo get_site_url(); ?>">蒋子凡 <span>Blog</span></a></h1>
+            <a href="<?php echo get_site_url(); ?>/about" class="about">关于</a>
         </header>
 
         <div class="index-main">
-            <a href="#" class="posts-link">Posts</a>
+            <a href="<?php echo get_site_url(); ?>/archives/all" class="posts-link">Posts</a>
 
             <?php query_posts(array("showposts" => 5)); ?>
 
@@ -21,7 +21,7 @@
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <li>
-                    <h3 class="more"><a href="#">More ..</a></h3>
+                    <h3 class="more"><a href="<?php echo get_site_url(); ?>/archives/all">More ..</a></h3>
                 </li>
             </ul>
 
