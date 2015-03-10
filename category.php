@@ -6,7 +6,7 @@
         <a href="<?php echo get_site_url(); ?>" class="home-link">Home</a>
 
         <div class="top">
-            <h1>归档</h1>
+            <h1><a href="<?php echo get_site_url(); ?>/archives/all">归档</a></h1>
             <ul class="meta">
                 <li><?php category_link('all') ?></li>
                 <li><?php category_link('life') ?></li>
