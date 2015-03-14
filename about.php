@@ -16,7 +16,9 @@ Template Name: About
         </div>
 
         <div class="content">
-            正在写 Orz ...
+            <p>
+                你好，我叫蒋子凡。
+            </p>
         </div>
     </div>
 </div>
