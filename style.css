@@ -66,6 +66,10 @@ blockquote {
   height: 100%;
   background: rgba(0, 0, 0, 0.8) bottom no-repeat;
   background-image: url(images/mugecuo_loss.jpg);
+<<<<<<< HEAD
+=======
+  -webkit-background-size: 100% 800px;
+>>>>>>> 2405c770b4594e0b9630134206375f2ae00d9200
   -moz-background-size: 100% 800px;
   -o-background-size: 100% 800px;
   -webkit-background-size: 100% 800px;
