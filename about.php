@@ -17,10 +17,6 @@ Template Name: About
 
         <div class="content">
             <p>
-                蒋子凡
-            </p>
-            <br>
-            <p>
                 理想主义者，
             </p>
             <p>
