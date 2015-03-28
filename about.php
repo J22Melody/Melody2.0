@@ -26,6 +26,10 @@ Template Name: About
                 我最近的一份工作是在知乎，担任前端开发。而现在我已经回到学校，处理一些闲杂的事情，以及筹划一场毕业旅行。哦，如果顺利的话，我将于 2015 夏天毕业于南京大学。
             </p>
             <br>
+            <p>
+                订阅蒋子凡的博客：
+            </p>
+            <?php echo do_shortcode("[jetpack_subscription_form]"); ?>
         </div>
     </div>
 </div>
