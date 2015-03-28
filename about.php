@@ -28,7 +28,7 @@ Template Name: About
             <p>
                 订阅：
             </p>
-            echo do_shortcode("[subscribe2]");
+            <?php echo do_shortcode("[subscribe2]"); ?>
         </div>
     </div>
 </div>
