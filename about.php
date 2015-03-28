@@ -29,6 +29,8 @@ Template Name: About
                 订阅：
             </p>
             <?php echo do_shortcode("[subscribe2]"); ?>
+            <?php $content = apply_filters('the_content', '<p><!--subscribe2--></p>');
+echo $content; ?>
         </div>
     </div>
 </div>
