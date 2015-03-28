@@ -26,3 +26,7 @@ blockquote {
     padding-left: 2em;
     background: url(images/quote.png) no-repeat 0 0;
 }
+
+a[href^="http://www.51.la"] {
+    display: none;
+}
