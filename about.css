@@ -1,0 +1,12 @@
+/* line 1, scss/about.scss */
+.about-content {
+  line-height: 2.67;
+}
+/* line 4, scss/about.scss */
+.about-content section {
+  margin-bottom: 32px;
+}
+/* line 8, scss/about.scss */
+.about-content ul {
+  padding-left: 16px;
+}
