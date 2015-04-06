@@ -34,6 +34,16 @@ Template Name: About
             </section>
 
             <section>
+                <h3>EXPERIENCE</h3>
+                <ul>
+                    <li>知乎，前端工程师，2014.7 ~ 2015.3</li>
+                    <li><a href="http://mydocumate.com" target="_blank">MyDocumate</a>，前端工程师，2013.12 ~ 2014.5</li>
+                    <li>聚划算，前端工程师，2013.7 ~ 2013.9</li>
+                    <li><a href="http://lilystudio.org" target="_blank">小百合工作室</a>，美工组组长，2012 ~ 2013</li>
+                </ul>
+            </section>
+
+            <section>
                 <h3>PROJECTS</h3>
                 <ul>
                     <li>仙林软件奇侠传，背景为南大的 RPG 游戏，Based on Java Swing</li>
