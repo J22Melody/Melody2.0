@@ -71,7 +71,7 @@ var map, infowindow;
 
 var init_map = function () {
     var zoom = 4;
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         zoom = 3;
     }
     var mapOptions = {
