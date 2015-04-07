@@ -1,0 +1,29 @@
+.top {
+    margin-bottom: 30px !important;
+}
+
+.about-content {
+    line-height: 2.67;
+
+    section {
+        margin-bottom: 32px;
+    }
+
+    ul {
+        padding-left: 16px;
+    }
+}
+
+#map-canvas {
+    width: 100%;
+    height: 561px;
+}
+
+.place-info {
+    .place-name {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        font-size: 16px;
+        color: #333;
+    }
+}

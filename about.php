@@ -7,7 +7,6 @@ Template Name: About
 <?php get_header() ?>
 
 <div class="container">
-
     <div class="inner">
         <a href="<?php echo get_site_url(); ?>" class="home-link">Home</a>
 
@@ -51,10 +50,74 @@ Template Name: About
                     <li><a href="http://classic.lilystudio.org" target="_blank">ClassIC</a>，课程分享网站，<a href="http://jzf.life/archive/500" target="_blank">《ClassIC I See》</a>，Powered by Yii</li>
                 </ul>
             </section>
+
+            <section>
+                <h3>FOOTPRINTS</h3>
+                <div id="map-canvas"></div>
+            </section>
         </div>
     </div>
 </div>
 
 <?php include '_footer.php' ?>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCv7VxrbF2DDuTrkS6A8JPaVVvhxF3eaxE&sensor=true"></script>
+
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
+
+<script>
+
+var map, infowindow;
+
+var init_map = function () {
+    var mapOptions = {
+        center: new google.maps.LatLng(38.3446509602, 104.1075355397),
+        zoom: 4,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+};
+
+var init_place = function () {
+    $.ajax({
+        url: '<?php bloginfo('template_url'); ?>/js/data.json',
+        success: function (data) {
+            var places = data.places;
+            places.forEach(function(place) {
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(place.location.k, place.location.A),
+                    title: place.name
+                });
+                marker.setMap(map);
+
+                var contentString =
+                '<div class="place-info">' +
+                    '<div class="place-header">' +
+                        '<h6 class="place-name">' + place.name + '</h6>' +
+                        '<span class="place-time">' + (place.time || '') + '</span>' +
+                    '</div>' +
+                    '<div>' + (place.desc || '') + '</div>' +
+                '</div>'
+
+                google.maps.event.addListener(marker, 'click', function () {
+                    if (infowindow) infowindow.close();
+
+                    infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
+
+                    infowindow.open(map, marker);
+                });
+            });
+        }
+    });
+};
+
+$(document).ready(function(){
+    init_map();
+    init_place();
+});
+
+</script>
 
 <?php get_footer() ?>
