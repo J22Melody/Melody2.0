@@ -61,7 +61,7 @@ Template Name: About
 
 <?php include '_footer.php' ?>
 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8swwXciImbRK0mbWRYvuyYM6pzg1pEdQ&sensor=true"></script>
+<script src="http://ditu.google.cn/maps/api/js?&sensor=true"></script>
 
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
 
