@@ -70,9 +70,13 @@ Template Name: About
 var map, infowindow;
 
 var init_map = function () {
+    var zoom = 4;
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        zoom = 3;
+    }
     var mapOptions = {
         center: new google.maps.LatLng(38.3446509602, 104.1075355397),
-        zoom: 4,
+        zoom: zoom,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
